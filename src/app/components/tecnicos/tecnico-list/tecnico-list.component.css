@@ -1,10 +1,17 @@
 .container{
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
+    background-color: rgba(238, 236, 236, 0.629);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 table {
     width: 100%;
+}
+
+#tabela{
+    margin-bottom: 40px;
 }
 
 mat-form-field{

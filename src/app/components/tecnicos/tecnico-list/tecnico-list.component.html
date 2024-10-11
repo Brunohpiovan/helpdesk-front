@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mat-elevation-z5">
 
   <h1>Lista de Técnicos</h1>
 
@@ -9,7 +9,7 @@
     <input matInput (keyup)="applyFilter($event)" placeholder="Ex. user" #input>
   </mat-form-field>
 
-    <div class="mat-elevation-z8">
+    <div id="tabela" class="mat-elevation-z8">
         <table mat-table [dataSource]="dataSource">
       
           <ng-container matColumnDef="position">
