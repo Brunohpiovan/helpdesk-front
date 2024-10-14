@@ -24,3 +24,10 @@ h1{
     font-weight: bold;
     margin-bottom: 2rem;
 }
+.edit{
+    color: rgb(6, 127, 171);
+    margin-right: 8px;
+}
+.delete{
+    color: red;
+}
