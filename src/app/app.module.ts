@@ -37,6 +37,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AuthIncerceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnicos/tecnico-create/tecnico-create.component';
 import { NgxMaskModule } from 'ngx-mask';
+import { TecnicoUpdateComponent } from './components/tecnicos/tecnico-update/tecnico-update.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { NgxMaskModule } from 'ngx-mask';
     HeaderComponent,
     TecnicoListComponent,
     LoginComponent,
-    TecnicoCreateComponent
+    TecnicoCreateComponent,
+    TecnicoUpdateComponent
   ],
   imports: [
     BrowserModule,
