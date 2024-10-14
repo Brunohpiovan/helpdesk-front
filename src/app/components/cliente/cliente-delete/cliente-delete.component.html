@@ -1,0 +1,66 @@
+<div class="containter mat-elevation-z8">
+    <form action="" class="form">
+
+        <h1 class="fullWidth">Deletar Cliente</h1>
+        <img class="fullWidth" src="assets/img/tecnico-create.svg" alt="cliente create">
+
+        <section class="section">
+            <mat-checkbox 
+            [disabled]="true"
+            class="margin" color="primary" >Admin</mat-checkbox>
+            <mat-checkbox 
+            [disabled]="true"
+            class="margin" color="primary" >Cliente</mat-checkbox>
+            <mat-checkbox 
+            [disabled]="true"
+            class="margin" color="primary" >Técnico</mat-checkbox>
+          </section>
+
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label>Nome</mat-label>
+            <input
+            [(ngModel)]="cliente.nome"
+            name="nome"
+            [disabled]="true"
+             matInput >
+            <mat-icon matSuffix>person_pin</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label>CPF</mat-label>
+            <input
+            [(ngModel)]="cliente.cpf"
+            name="cpf"
+            [disabled]="true"
+             matInput>
+             
+            <mat-icon matSuffix>badge</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field  class="fullWidth" appearance="legacy">
+            <mat-label>E-mail</mat-label>
+            <input
+            [(ngModel)]="cliente.email"
+            name="email"
+            [disabled]="true"
+            matInput>
+            <mat-icon matSuffix>mail</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field  class="fullWidth" appearance="legacy">
+            <mat-label>Senha</mat-label>
+            <input type="password"
+            [(ngModel)]="cliente.senha"
+            name="senha"
+            [disabled]="true"
+            matInput>
+            <mat-icon matSuffix>lock_open</mat-icon>
+          </mat-form-field>
+          
+          <button (click)="delete()" class="fullWidth mat-elevation-z4" mat-flat-button color="primary">Deletar</button>
+          <button routerLink="../../" class="fullWidth mat-elevation-z4" mat-stroked-button color="warn">Cancelar</button>
+    </form>
+
+    <p class="fullWidth">by BrunoPiovan</p>
+
+</div>

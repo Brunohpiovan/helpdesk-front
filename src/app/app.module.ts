@@ -39,6 +39,10 @@ import { TecnicoCreateComponent } from './components/tecnicos/tecnico-create/tec
 import { NgxMaskModule } from 'ngx-mask';
 import { TecnicoUpdateComponent } from './components/tecnicos/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnicos/tecnico-delete/tecnico-delete.component';
+import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
+import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 
 
 @NgModule({
@@ -48,10 +52,14 @@ import { TecnicoDeleteComponent } from './components/tecnicos/tecnico-delete/tec
     HomeComponent,
     HeaderComponent,
     TecnicoListComponent,
+    ClienteListComponent,
     LoginComponent,
     TecnicoCreateComponent,
     TecnicoUpdateComponent,
-    TecnicoDeleteComponent
+    TecnicoDeleteComponent,
+    ClienteCreateComponent,
+    ClienteUpdateComponent,
+    ClienteDeleteComponent
   ],
   imports: [
     BrowserModule,
