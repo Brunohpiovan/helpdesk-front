@@ -14,7 +14,7 @@
       </form>
       <div class="status-prioridade">
         <mat-form-field appearance="outline">
-            <mat-label>Selecione um status</mat-label>
+            <mat-label>{{retornaStatus(chamado.status)}}</mat-label>
             <mat-select 
             [(ngModel)]="chamado.status" name="status"
             [formControl]="status"
@@ -25,7 +25,7 @@
             </mat-select>
           </mat-form-field>
           <mat-form-field appearance="outline">
-            <mat-label>Selecione uma prioridade</mat-label>
+            <mat-label>{{retornaPrioridade(chamado.prioridade)}}</mat-label>
             <mat-select 
             [(ngModel)]="chamado.prioridade" name="prioridade"
             [formControl]="prioridade"
@@ -38,7 +38,7 @@
       </div>
       <div class="tecnico">
         <mat-form-field class="full-width" appearance="outline">
-          <mat-label>Selecione um técnico</mat-label>
+          <mat-label>{{chamado.nomeTecnico}}</mat-label>
           <mat-select
           [(ngModel)]="chamado.tecnico" name="tecnico"
           [formControl]="tecnico"
@@ -49,7 +49,7 @@
       </div>
       <div class="cliente">
         <mat-form-field class="full-width" appearance="outline">
-          <mat-label>Selecione um cliente</mat-label>
+          <mat-label>{{chamado.nomeCliente}}</mat-label>
           <mat-select
           [(ngModel)]="chamado.cliente" name="cliente"
           [formControl]="cliente"
@@ -68,7 +68,7 @@
           class="obs" matInput placeholder="Ex. Trocar cartuchos da impressora"></textarea>
         </mat-form-field>
       </form>
-      <button (click)="create()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4" mat-raised-button color="primary">Atualizar</button>
+      <button (click)="update()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4" mat-raised-button color="primary">Atualizar</button>
       <button routerLink="../../" class="full-width mat-elevation-z4" mat-stroked-button color="warn">Cancelar</button>
 
       <p class="full-width">&copy; Developed by brunopiovan</p>
